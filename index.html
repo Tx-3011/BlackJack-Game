@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/icon.png">
     <title>BlackJack</title>
 </head>
 <body>
@@ -11,14 +12,13 @@
         <h1 class="gameTitle">♠️ BlackJack Game ♠️</h1>
         <h2 class="status" id="status">Would you like to play?</h2>
         <div class="score">
-        <p class="cards">cards: <p id="cards"></p></p>
-        <p class="sum">sum: <p id="sum"></p></p>
+            <p class="cards">Cards: <span id="cards"></span></p>
+            <p class="sum">Sum: <span id="sum"></span></p>
         </div>
-        <button class="hitMe">Hit me</button>
-        <button class="newGame">New Game</button>
-        </div>
+        <button class="hitMe" id="hitMe" onclick="hitMe()">Hit me</button>
+        <button class="newGame" id="newGame" onclick="newGame()">Start Game</button>
+    </div>
     
-
-
+    <script src="index.js"></script>
 </body>
 </html>
